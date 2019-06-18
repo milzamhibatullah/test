@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_highest_score"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".kuis.HighestScoreActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="107dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Skor Anda :"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textScore"
+            android:background="@color/primary"
+            android:textColor="#fff"
+            android:padding="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <TextView
+            android:text="Skor Tertinggi :"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="#fff"
+            android:background="#d4390a"
+            android:id="@+id/textHighScore"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <Button
+            android:text="Coba Lagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/button"
+            android:onClick="onClick" />
+    </LinearLayout>
+</RelativeLayout>

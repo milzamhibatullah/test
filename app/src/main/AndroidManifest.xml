@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kristia_pembelajaran_videografi.kristia_videografi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_camera"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".views.DetailTempatKursusActivity"></activity>
+        <activity android:name=".views.PembelajaranActivity" />
+        <activity android:name=".views.TutorialVideGrafiActivity" />
+        <activity android:name=".Admin.TampungFragmentActivity" />
+        <activity android:name=".views.MovementCameraActivity" />
+        <activity android:name=".views.LensaActivity" />
+        <activity android:name=".views.DaftarTempatKursusActivity" />
+        <activity android:name=".views.SejarahActivity" />
+        <activity android:name=".views.DetailActivity" />
+        <activity android:name=".views.CameraActivity" />
+        <activity android:name=".User.DetailActivity" />
+        <activity android:name=".views.MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Admin.InputDataActivity" />
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/title_activity_tampung_fragment"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".kuis.QuisActivity" />
+        <activity android:name=".kuis.HighestScoreActivity" />
+    </application>
+
+</manifest>
